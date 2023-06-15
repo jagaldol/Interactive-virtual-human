@@ -109,7 +109,19 @@ public class STT : MonoBehaviour
         {
             transcript = recognitionResponse.results[0].alternatives[0].transcript;
             Debug.Log(transcript);
-
+            
+            if (transcript.Contains("안녕"))
+            {
+                ReceiveString = "안녕하세요";
+            }
+            else if(transcript.Contains("이름"))
+            {
+                ReceiveString = "제 이름은 유나입니다.";
+            }
+            else if(transcript.Contains("춤"))
+            {
+                ReceiveString = "";
+            }
         }
     }
 

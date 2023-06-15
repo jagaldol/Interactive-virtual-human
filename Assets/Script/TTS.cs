@@ -28,6 +28,9 @@ public class TTS : MonoBehaviour
         _gcTextToSpeech.SynthesizeSuccessEvent += _gcTextToSpeech_SynthesizeSuccessEvent;
         _gcTextToSpeech.SynthesizeFailedEvent += _gcTextToSpeech_SynthesizeFailedEvent;
         audioQueue = new Queue<AudioClip>();
+
+        avatar_name = "noyj";
+        TextToSpeech("안녕하세요. 만나서 반가워요.");
     }
 
     // Update is called once per frame
