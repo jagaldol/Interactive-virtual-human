@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17387682, g: 0.20907754, b: 0.25215095, a: 1}
+  m_IndirectSpecularColor: {r: 0.17387658, g: 0.20907693, b: 0.25215054, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -647,6 +647,7 @@ GameObject:
   - component: {fileID: 1635051461}
   - component: {fileID: 1635051460}
   - component: {fileID: 1635051464}
+  - component: {fileID: 1635051465}
   m_Layer: 0
   m_Name: TTSSTT
   m_TagString: Untagged
@@ -716,7 +717,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635051459}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.05584374, y: 2.3449514, z: 2.0641263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -820,6 +821,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1635051465
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635051459}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c3db3aeb38a83e41b1409e5ed86e36a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1784959885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1132,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1045, y: 107.99979}
+  m_AnchoredPosition: {x: 1045, y: 107.99977}
   m_SizeDelta: {x: 300, y: 110}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &637564586325049992
@@ -2084,7 +2106,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: 107.99979}
+  m_AnchoredPosition: {x: -50, y: 107.99977}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &637564586469592011
@@ -5247,7 +5269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 385, y: 107.99979}
+  m_AnchoredPosition: {x: 385, y: 107.99977}
   m_SizeDelta: {x: 300, y: 110}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &637564586904342714
@@ -6138,7 +6160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 715, y: 107.99979}
+  m_AnchoredPosition: {x: 715, y: 107.99977}
   m_SizeDelta: {x: 300, y: 110}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &637564587061283399
@@ -14307,7 +14329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1390, y: 107.99979}
+  m_AnchoredPosition: {x: 1390, y: 107.99977}
   m_SizeDelta: {x: 358, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &637564588134559013
@@ -15713,8 +15735,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 637564586990392620}
   m_HandleRect: {fileID: 637564586990392621}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16052,7 +16074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: 107.99979}
+  m_AnchoredPosition: {x: 50, y: 107.99977}
   m_SizeDelta: {x: 300, y: 110}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &637564588325849190
@@ -17532,6 +17554,7 @@ GameObject:
   - component: {fileID: 543450652023373000}
   - component: {fileID: 5866666020364838578}
   - component: {fileID: 5866666020364838584}
+  - component: {fileID: 5866666020364838585}
   - component: {fileID: 5866666020364838583}
   - component: {fileID: 5866666020364838582}
   - component: {fileID: 5866666020364838581}
@@ -20185,7 +20208,7 @@ MonoBehaviour:
   randomHoldDurationMax: 0.5
   configReady: 1
   warnOnNullRefs: 1
-  inspSalsaLinked: 1
+  inspSalsaLinked: 0
   inspStateFoldoutProcessing: 0
   inspStateFoldoutSettings: 0
   inspStateFoldoutEmotes: 0
@@ -22040,6 +22063,18 @@ MonoBehaviour:
   inspShowLids: 1
   inspShowLipsync: 1
   inspShowBlinks: 1
+--- !u!114 &5866666020364838585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147485173362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ece47e0f06b037478ebdb8e918ab589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6202453138706252727
 Transform:
   m_ObjectHideFlags: 0

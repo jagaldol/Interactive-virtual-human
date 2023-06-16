@@ -11,6 +11,8 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 public class STT : MonoBehaviour
 {
+    GameObject yuna;
+
     public string[] dic_keys;// = new string[lines.Length];
     public string[] dic_values;// = new string[lines.Length];
 
@@ -68,6 +70,7 @@ public class STT : MonoBehaviour
 
     void Start()
     {
+        yuna = GameObject.Find("yuna");
         TextAsset textAsset = Resources.Load<TextAsset>("dic_file");
         string[] lines = textAsset.text.Split('\n');
         dic_keys = new string[lines.Length - 1];
@@ -120,7 +123,8 @@ public class STT : MonoBehaviour
             }
             else if(transcript.Contains("춤"))
             {
-                ReceiveString = "";
+                ReceiveString = "춤을 추겠습니다.";
+                yuna.GetComponent<DanceBehaviourScript>().dancing();
             }
         }
     }
