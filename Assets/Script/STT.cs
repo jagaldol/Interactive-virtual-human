@@ -181,7 +181,15 @@ public class STT : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        m_Socket.Close();
-        m_Socket = null;
+        try
+        {
+            m_Socket.Close();
+            m_Socket = null;
+        }
+
+        catch (NullReferenceException err)
+        {
+            Debug.Log("Socket unopened : " + err.ToString());
+        }
     }
 }
