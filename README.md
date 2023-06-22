@@ -25,3 +25,7 @@ An interactive virtual human created with Unity 3D engine.
 * include the keyword, "춤" : "춤을 추겠습니다", and she starts dancing.
 
 > If you don't include the keyword above, she doesn't give a separate answer.
+
+## Dependency
+
+* Unity 2022.3.2f1
